@@ -4,8 +4,7 @@ import sampleData from '../data/exampleVideoData.js';
 var videoListReducer = (state = sampleData, action) => {
   switch (action.type) {
   case 'CHANGE_VIDEO_LIST':
-    var result = action.videos;
-    return result;
+    return action.videos;
   default: return [];
   }
 };
