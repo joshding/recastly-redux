@@ -12,14 +12,10 @@ import handleSearchChange from '../actions/search.js';
 // mapDispatchToProps an object with values which are reducer functions
 
 var mapStateToProps = (state) => {
-  return {
-    value: state.value,
-  };
+  return {};
 };
 
 const mapDispatchToProps = { handleSearchInputChange: handleSearchChange };
-
-//onClick = { props.handleSearchChange }
 
 var SearchContainer = connect(mapStateToProps, mapDispatchToProps)(Search);
 
